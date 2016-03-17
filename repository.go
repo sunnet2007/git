@@ -58,4 +58,5 @@ func (this *Repository) Status() (string, error) {
 // 查看修改内容
 func (this *Repository) Diff() (string, error) {
 	// git diff
+	return "", nil
 }
