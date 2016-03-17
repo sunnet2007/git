@@ -24,3 +24,14 @@ func (this *Branch) Branch() (string, error) {
 func (this *Branch) Switch() error {
 	// git checkout
 }
+
+// 合并某分支到当前分支
+func (this *Branch) Merge(name string) error {
+	// git merge <name>
+	return nil
+}
+
+// 删除分支
+func (this *Branch) Delete() error {
+	// git branch -d <name>
+}
