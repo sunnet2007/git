@@ -1,8 +1,9 @@
 package git
 
 type Repository struct {
-	name      string // 仓库名称
-	localPath string //仓库本地路径
+	name      string  // 仓库名称
+	localPath string  //仓库本地路径
+	curBranch *Branch // 当前分支
 }
 
 func NewRepository(name string, path string) *Repository {
