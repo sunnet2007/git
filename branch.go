@@ -2,6 +2,7 @@ package git
 
 type Branch struct {
 	name string // 分支名字
+	repo *Repository
 }
 
 func NewBranch(name string) *Branch {
